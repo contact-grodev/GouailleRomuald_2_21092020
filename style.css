@@ -324,6 +324,7 @@ a:focus
 	flex-direction: column;
 	border: 0;
 	padding: 0;
+	padding-bottom: 0.5em;
 	padding-left: 1em;
 }
 
@@ -369,6 +370,17 @@ a:focus
 #popular .mini_desc
 {
 	padding-left: 1em;
+}
+
+/* Notation */
+.notation_ful
+{
+	color: #0065FC;
+}
+
+.notation_emp
+{
+	color: #F2F2F2;
 }
 
 /* Activités (conteneur) */
