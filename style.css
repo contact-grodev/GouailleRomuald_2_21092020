@@ -186,7 +186,8 @@ a:focus
 {
 	height: 1em;
 	width: 1em;
-	background-color: #F2F2F2;
+	color: #0065FC;
+	background-color: #DEEBFF;
 	border-radius: 2em;
 	padding: 0.7em;
 	margin-right: 0.5em;
@@ -421,7 +422,7 @@ a:focus
 {
 	border-radius: 0.8em 0.8em 0 0;
 	object-fit: cover;
-	height: 15em;
+	height: 12.5em;
 }
 
 /* Activités (moyen miniatures descriptions) */
@@ -443,7 +444,7 @@ a:focus
 {
 	border-radius: 12px 12px 0 0;
 	object-fit: cover;
-	height: 10em;
+	height: 9em;
 }
 
 /* Activités (petit miniatures descriptions) */
