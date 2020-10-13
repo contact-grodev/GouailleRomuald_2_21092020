@@ -51,7 +51,7 @@ h2
 	margin-bottom: 0;
 	margin-left: 0;
 	margin-right: 0;
-	font-weight: bold;
+	font-weight: 900;
 	padding-bottom: 0.5em;
 }
 
@@ -78,6 +78,11 @@ p
 	margin-bottom: 1em;
 	margin-left: 0;
 	margin-right: 0;
+}
+
+strong
+{
+	font-weight: 500;
 }
 
 /* Liens */
@@ -109,6 +114,13 @@ a:active
 a:focus
 {
 
+}
+
+#logo .logo
+{
+	height: 3em;
+	width: 6em;
+	padding-top: 1em;
 }
 
 /*Menu*/
