@@ -1,0 +1,23 @@
+/* Coded by Romuald Gouaille */
+
+body
+{
+	display: flex;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: #F2F2F2 2px 2px;
+}
+
+.container
+{
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	padding: 30px;
+	width: 30%;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+

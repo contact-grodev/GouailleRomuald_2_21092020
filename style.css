@@ -1,0 +1,506 @@
+/* Coded by Romuald Gouaille */
+
+/* Body */
+body
+{
+	font-family: 'Raleway', sans-serif;
+	text-shadow: #F2F2F2 2px 2px;
+}
+
+/* Titres */
+h1
+{
+
+}
+
+h2
+{
+	display: flex;
+	font-size: 1.5em;
+	margin-top: 0.33em;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+h3
+{
+
+}
+
+h4
+{
+	display: flex;
+	font-size: 1em;
+	margin-top: 0.33em;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+/* Paragraphes */
+p
+{
+	display: flex;
+	font-size: 1em;
+	margin-top: 0.33em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Liens */
+a:link
+{
+	text-decoration: none;
+	color: initial;
+}
+
+/* Liens (visités) */
+a:visited
+{
+	color: initial;
+}
+
+/* Liens (survol) */
+a:hover
+{
+	color: #0065FC;
+}
+
+/* Liens (actifs) */
+a:active
+{
+
+}
+
+/* Liens (focus) */
+a:focus
+{
+
+}
+
+/*Menu*/
+#menu
+{
+	display: flex;
+	width: 100%;
+	flex-direction: line;
+	justify-content: space-between;
+}
+
+/* Page active */
+#menu ul li a.active
+{
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: #0065FC;
+	color: #0065FC;
+}
+
+/*Puces du menu*/
+#menu ul
+{
+	display: flex;
+	flex-direction: line;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Items du menu */
+.menu_item
+{
+	display: flex;
+	padding: 15px;
+	padding-top: 30px;
+	text-shadow: #DEEBFF 2px 2px;
+}
+
+/* Inscription */
+#signup
+{
+	color: #0065FC;
+}
+
+/* Filtres */
+#filters
+{
+	display: flex;
+	flex-direction: row;
+	line-height: 2.2em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+/* Filtres (titre) */
+#filters .filters
+{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	padding-top: 5px;
+	margin-right: 15px;
+}
+
+/* Filtres (catégories) */
+#filters .category
+{
+	display: flex;
+	font-weight: bold;
+	margin: 5px;
+	padding-right: 10px;
+	border: 2px solid #F2F2F2;
+	border-radius: 25px
+}
+
+/* Filtres (svg) */
+#filters .filters_svg
+{
+	display: flex;
+	height: 15px;
+	width: 15px;
+	background-color: #F2F2F2;
+	border-radius: 25px;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+/* Recherche */
+#search
+{
+	display: flex;
+	flex-direction: column;
+}
+
+/* Zone de recherche */
+#searchbar
+{
+	display: flex;
+	flex-direction: line;
+	justify-content: flex-start;
+}
+
+/* Bouton "Localisation" */
+#searchbar .localisation
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 40px;
+	background-color: #F2F2F2;
+	border-radius: 12px 0 0 12px;
+	outline: none;
+	border: none;
+	color: black;
+}
+
+/* Bouton "Localisation" (svg) */
+#searchbar .localisation_svg
+{
+	display: flex;
+	height: 15px;
+	width: 15px;
+}
+
+/* Champ de recherche */
+#searchbar .field
+{
+	display: flex;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	border: 1px solid #F2F2F2;
+	border-right: none;
+	border-left: none;
+	padding-left: 10px;
+	height: 40px;
+	outline: none;
+}
+
+/* Bouton "Rechercher" */
+#searchbar .search_button
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	height: 40px;
+	background-color: #0065FC;
+	border-radius: 0 12px 12px 0;
+	outline: none;
+	border: none;
+	letter-spacing: 2px;
+}
+
+/* Nombre de résultats */
+#result_number
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#result_number .result_number_svg
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	font-size: 1.2em;
+	border: 2px solid;
+	border-color: #F2F2F2;
+	border-radius: 25px;
+	height: 1em;
+	width: 1em;
+	color: #0065FC;
+	padding: 1px;
+	margin-right: 5px;
+}
+
+/* Résultats */
+#results
+{
+	display: flex;
+	width: 100%;
+	flex-direction: line;
+	justify-content: flex-start;
+}
+
+/* Hébergements */
+#accomodation
+{
+	display: flex;
+	width: 70%;
+	height: auto;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	flex-wrap: wrap;
+	padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	margin: 30px;
+	margin-left: 0;
+	border-radius: 15px;
+}
+
+/* Hébergement (conteneur) */
+#accomodation .container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/* Hébergements (liens) */
+#accomodation .link
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/* Hébergement (miniatures) */
+#accomodation .mini
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: justify;
+	overflow-wrap: break-word;
+	background-color: white;
+	box-shadow: 0px 0px 0.5em grey;
+	height: auto;
+	min-height: 250px;
+	width: 28%;
+	margin: 0;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 5px;
+	border-radius: 15px;
+}
+
+/* Hébergement (miniatures images) */
+#accomodation .mini_picture
+{
+	display: flex;
+	border-radius: 12px 12px 0 0;
+	width: auto;
+	height: 150px;
+	object-fit: cover;
+}
+
+/* Hébergement (miniatures descriptions) */
+#accomodation .mini_desc
+{
+	display: flex;
+	flex-direction: column;
+	border: 0;
+	padding: 0;
+	padding-left: 10px;
+}
+
+/* Populaires */
+#popular
+{
+	display: flex;
+	width: 30%;
+	height: auto;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	flex-wrap: wrap;
+	padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 15;
+	margin: 30px;
+	margin-right: 0;
+	border-radius: 15px;
+}
+
+/* Populaires (conteneur) */
+#popular .container
+{
+	display: flex;
+	flex-direction: column;
+}
+
+/* Populaires (liens) */
+#popular .link
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/* Populaires (miniatures) */
+#popular .mini
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	overflow-wrap: break-word;
+	background-color: white;
+	box-shadow: 0px 0px 0.5em grey;
+	height: auto;
+	min-height: 150px;
+	width: auto;
+	margin: 0;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 5px;
+	border-radius: 15px;
+}
+
+/* Populaires (miniatures images) */
+#popular .mini_picture
+{
+	display: flex;
+	border-radius: 12px 0 0 12px;
+	width: 150px;
+	height: 170px;
+	object-fit: cover;	
+}
+
+/* Populaires (miniatures descriptions) */
+#popular .mini_desc
+{
+	display: flex;
+	flex-direction: column;
+	border: 0;
+	padding: 0;
+	padding-left: 15px;
+}
+
+/* Activités */
+#activities
+{
+	display: flex;
+	width: auto;
+	height: auto;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+/* Activités (conteneur) */
+#activities .container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* Activités (grand) */
+#activities .big
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: justify;
+	overflow-wrap: break-word;
+	background-color: white;
+	box-shadow: 0px 0px 0.5em grey;
+	height: auto;
+	min-height: 250px;
+	width: 20%;
+	margin: 0;
+	margin-top: 30px;
+	margin-right: 15px;
+	border-radius: 15px;
+}
+
+/* Activités (miniatures images) */
+#activities .big_picture
+{
+	display: flex;
+	border-radius: 12px 12px 0 0;
+	width: auto;
+	height: 550px;
+	object-fit: cover;
+}
+
+/* Activités (miniatures descriptions) */
+#activities .big_desc
+{
+	display: flex;
+	flex-direction: column;
+	border: 0;
+	padding: 10;
+}
+
+/* Footer */
+footer
+{
+
+}
+
+/* Footer (conteneur) */
+footer .container
+{
+	display: flex;
+	flex-direction: line;
+	justify-content: flex-start;
+	background-color: #F2F2F2;
+	margin-top: 50px;
+	padding-left: 25px;
+	padding-bottom: 25px;
+}
+
+/* Footer (colonnes) */
+footer .column
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-right: 20%;
+	line-height: 2em;
+}
