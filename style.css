@@ -8,6 +8,11 @@ body
 	margin: 0;
 }
 
+main
+{
+	padding-left: 10px;
+}
+
 /* Titres */
 h1
 {
@@ -16,7 +21,6 @@ h1
 
 h2
 {
-	display: flex;
 	font-size: 1.5em;
 	margin-top: 0.33em;
 	margin-bottom: 0;
@@ -32,7 +36,6 @@ h3
 
 h4
 {
-	display: flex;
 	font-size: 1em;
 	margin-top: 0.33em;
 	margin-bottom: 0;
@@ -44,7 +47,6 @@ h4
 /* Paragraphes */
 p
 {
-	display: flex;
 	font-size: 1em;
 	margin-top: 0.33em;
 	margin-bottom: 1em;

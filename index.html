@@ -10,285 +10,286 @@
 	</head>
 
 <body>
-
+<main>
 	<!-- Header Logo/Menu -->
 	<header>
 
-		<!-- Menu -->
-		<nav id="menu">
-			<div id="logo">
-				<a href="index.html">
-				<img class="logo"
-				src="MISC/IMG/LOGO/Reservia.svg"
-				alt="Reservia"
-				title="LE site de réservation"
-				style="width:130px;height:65px" />
+			<!-- Menu -->
+			<nav id="menu">
+				<div id="logo">
+					<a href="index.html">
+					<img class="logo"
+					src="MISC/IMG/LOGO/Reservia.svg"
+					alt="Reservia"
+					title="LE site de réservation"
+					style="width:130px;height:65px" />
+					</a>
+				</div>
+				<ul>
+					<li><a class="active menu_item"
+						href="#results"
+						title="Hébergements"
+						target="_self">
+						Hébergements
+						</a>
+					</li>
+					<li><a class="menu_item"
+						href="#activities"
+						title="Activités"
+						target="_self">
+						Activités
+						</a>
+					</li>
+					<li><a id="signup"
+						class="menu_item"
+						href="MISC/404.html"
+						title="S'inscrire"
+						target="_self">
+						<strong>S'inscrire</strong>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Section 01 Recherche -->
+		<section id="search">
+			<h2>Trouver votre hébergement pour des vacances de rêve</h2>
+			<p>En plein centre-ville ou en pleine nature</p>
+
+			<!-- Barre de recherche -->
+			<div>
+				<form id="searchbar" action="" method="get">
+					<button class="localisation">
+						<img class="localisation_svg"
+						src="MISC/IMG/ICONS/map-marker-alt-solid.svg"
+						alt="Localisation"
+						title="Localisation" />
+					</button>
+					<input class="field" type="search" placeholder="Marseille, France"/>
+					<button class="search_button" type="button">
+						Rechercher
+					</button>
+				</form>
+			</div>
+
+			<!-- Filtres -->
+			<div id="filters">
+				<strong class="filters">Filtres</strong>
+				<a class="category"
+				href="MISC/404.html"
+				title="Economique"
+				target="_self">
+					<img class="filters_svg"
+					src="MISC/IMG/ICONS/money-bill-wave-solid.svg"
+					alt="Economique"
+					title="Economique" />
+				Economique
+				</a>
+				<a class="category"
+				href="MISC/404.html"
+				title="Familial"
+				target="_self">
+					<img class="filters_svg"
+					src="MISC/IMG/ICONS/home-solid.svg"
+					alt="Familial"
+					title="Familial" />
+				Familial
+				</a>
+				<a class="category"
+				href="MISC/404.html"
+				title="Romantique"
+				target="_self">
+					<img class="filters_svg"
+					src="MISC/IMG/ICONS/heart-solid.svg"
+					alt="Romantique"
+					title="Romantique" />
+				Romantique
+				</a>
+				<a class="category"
+				href="MISC/404.html"
+				title="Animaux autorisés"
+				target="_self">
+					<img class="filters_svg"
+					src="MISC/IMG/ICONS/home-solid.svg"
+					alt="Animaux autorisés"
+					title="Animaux autorisés" />
+				Animaux autorisés
 				</a>
 			</div>
-			<ul>
-				<li><a class="active menu_item"
-					href="#results"
-					title="Hébergements"
-					target="_self">
-					Hébergements
-					</a>
-				</li>
-				<li><a class="menu_item"
-					href="#activities"
-					title="Activités"
-					target="_self">
-					Activités
-					</a>
-				</li>
-				<li><a id="signup"
-					class="menu_item"
-					href="MISC/404.html"
-					title="S'inscrire"
-					target="_self">
-					<strong>S'inscrire</strong>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
 
-	<!-- Section 01 Recherche -->
-	<section id="search">
-		<h2>Trouver votre hébergement pour des vacances de rêve</h2>
-		<p>En plein centre-ville ou en pleine nature</p>
+			<!-- Nombre de resultats -->
+			<div id="result_number">
+				<strong class="result_number_svg">i</strong>
+				<p>Plus de <strong>500</strong> logements sont disponibles dans cette ville</p>
+			</div>
+		</section>
 
-		<!-- Barre de recherche -->
-		<div>
-			<form id="searchbar" action="" method="get">
-				<button class="localisation">
-					<img class="localisation_svg"
-					src="MISC/IMG/ICONS/map-marker-alt-solid.svg"
-					alt="Localisation"
-					title="Localisation" />
-				</button>
-				<input class="field" type="search" placeholder="Marseille, France"/>
-				<button class="search_button" type="button">
-					Rechercher
-				</button>
-			</form>
-		</div>
+		<!-- Section 02 Resultats -->
+		<section id="results">
 
-		<!-- Filtres -->
-		<div id="filters">
-			<strong class="filters">Filtres</strong>
-			<a class="category"
-			href="MISC/404.html"
-			title="Economique"
-			target="_self">
-				<img class="filters_svg"
-				src="MISC/IMG/ICONS/money-bill-wave-solid.svg"
-				alt="Economique"
-				title="Economique" />
-			Economique
-			</a>
-			<a class="category"
-			href="MISC/404.html"
-			title="Familial"
-			target="_self">
-				<img class="filters_svg"
-				src="MISC/IMG/ICONS/home-solid.svg"
-				alt="Familial"
-				title="Familial" />
-			Familial
-			</a>
-			<a class="category"
-			href="MISC/404.html"
-			title="Romantique"
-			target="_self">
-				<img class="filters_svg"
-				src="MISC/IMG/ICONS/heart-solid.svg"
-				alt="Romantique"
-				title="Romantique" />
-			Romantique
-			</a>
-			<a class="category"
-			href="MISC/404.html"
-			title="Animaux autorisés"
-			target="_self">
-				<img class="filters_svg"
-				src="MISC/IMG/ICONS/home-solid.svg"
-				alt="Animaux autorisés"
-				title="Animaux autorisés" />
-			Animaux autorisés
-			</a>
-		</div>
+			<!-- Article 02 Hebergements -->
+			<article id="accomodation">
+				<h2>Hébergements à Marseille</h2>
+				<div class="container">
+					<div class="mini">
+						<a class="link" href="MISC/404.html">
+							<img class="mini_picture"
+							src="MISC/IMG/ACCOMODATION/MINI/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+							alt="Auberge la Canebière" 
+							title="Auberge la Canebière" />
+							<div class="mini_desc">
+							<h4>Auberge la Canebière</h4>
+							<p>Nuit à partir de <strong>25€</strong></p>
+							Notation
+							</div>
+						</a>
+					</div>
+					<div class="mini">
+						<a class="link" href="MISC/404.html">
+							<img class="mini_picture"
+							src="MISC/IMG/ACCOMODATION/MINI/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
+							alt="Hôtel du port" 
+							title="Hôtel du port" />
+							<div class="mini_desc">
+							<h4>Hôtel du port</h4>
+							<p>Nuit à partir de <strong>52€</strong></p>
+							Notation
+							</div>
+						</a>
+					</div>
+					<div class="mini">
+						<a class="link" href="MISC/404.html">
+							<img class="mini_picture"
+							src="MISC/IMG/ACCOMODATION/MINI/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
+							alt="Hôtel Les mouettes" 
+							title="Hôtel Les mouettes" />
+							<div class="mini_desc">
+							<h4>Hôtel Les mouettes</h4>
+							<p>Nuit à partir de <strong>76€</strong></p>
+							Notation
+							</div>
+						</a>
+					</div>
+					<div class="mini">
+						<a class="link" href="MISC/404.html">
+							<img class="mini_picture"
+							src="MISC/IMG/ACCOMODATION/MINI/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
+							alt="Hôtel de la mer" 
+							title="Hôtel de la mer" />
+							<div class="mini_desc">
+							<h4>Hôtel de la mer</h4>
+							<p>Nuit à partir de <strong>46€</strong></p>
+							Notation
+							</div>
+						</a>
+					</div>
+					<div class="mini">
+						<a class="link" href="MISC/404.html">
+							<img class="mini_picture"
+							src="MISC/IMG/ACCOMODATION/MINI/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
+							alt="Auberge Le Panier" 
+							title="Auberge Le Panier" />
+							<div class="mini_desc">
+							<h4>Auberge Le Panier</h4>
+							<p>Nuit à partir de <strong>23€</strong></p>
+							Notation
+							</div>
+						</a>
+					</div>
+					<div class="mini">
+						<a class="link" href="MISC/404.html">
+							<img class="mini_picture"
+							src="MISC/IMG/ACCOMODATION/MINI/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
+							alt="Hôtel Chez Amina" 
+							title="Hôtel Chez Amina" />
+							<div class="mini_desc">
+							<h4>Hôtel Chez Amina</h4>
+							<p>Nuit à partir de <strong>96€</strong></p>
+							Notation
+							</div>
+						</a>
+					</div>
+				</div>
+				<h3>Afficher plus</h3>
+			</article>
 
-		<!-- Nombre de resultats -->
-		<div id="result_number">
-			<strong class="result_number_svg">i</strong>
-			<p>Plus de <strong>&nbsp500&nbsp</strong> logements sont disponibles dans cette ville</p>
-		</div>
-	</section>
+			<!-- Aside 02 Populaires -->
+			<aside id="popular">
+				<h2>Les plus populaires</h2>
+				<div class="container">
+					<div class="mini">
+						<a class="link" href="MISC/404.html">
+							<img class="mini_picture"
+							src="MISC/IMG/ACCOMODATION/MINI/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+							alt="Hôtel le soleil du matin"
+							title="Hôtel le soleil du matin" />
+							<div class="mini_desc">
+							<h4>Hôtel le soleil du matin</h4>
+							<p>Nuit à partir de <strong>128€</strong></p>
+							Notation
+							</div>
+						</a>
+					</div>
+					<div class="mini">
+						<a class="link" href="MISC/404.html">
+							<img class="mini_picture"
+							src="MISC/IMG/ACCOMODATION/MINI/aw-creative-VGs8z60yT2c-unsplash.jpg"
+							alt="Au coeur de l'eau Chambres d'hôtes"
+							title="Au coeur de l'eau Chambres d'hôtes" />
+							<div class="mini_desc">
+							<h4>Au coeur de l'eau Chambres d'hôtes</h4>
+							<p>Nuit à partir de <strong>71€</strong></p>
+							Notation
+							</div>
+						</a>
+					</div>
+					<div class="mini">
+						<a class="link" href="MISC/404.html">
+							<img class="mini_picture"
+							src="MISC/IMG/ACCOMODATION/MINI/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+							alt="Hôtel Tout bleu et Blanc"
+							title="Hôtel Tout bleu et Blanc" />
+							<div class="mini_desc">
+							<h4>Hôtel Tout bleu et Blanc</h4>
+							<p>Nuit à partir de <strong>68€</strong></p>
+							Notation
+							</div>
+						</a>
+					</div>
+				</div>
+			</aside>
+		</section>
 
-	<!-- Section 02 Resultats -->
-	<section id="results">
-
-		<!-- Article 02 Hebergements -->
-		<article id="accomodation">
-			<h2>Hébergements à Marseille</h2>
+		<!-- Section 03 Activités -->
+		<section id="activities">
+			<h2>Activités à Marseille</h2>
 			<div class="container">
-				<div class="mini">
-					<a class="link" href="MISC/404.html">
-						<img class="mini_picture"
-						src="MISC/IMG/ACCOMODATION/MINI/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
-						alt="Auberge la Canebière" 
-						title="Auberge la Canebière" />
-						<div class="mini_desc">
-						<h4>Auberge la Canebière</h4>
-						<p>Nuit à partir de <strong>&nbsp25€&nbsp</strong></p>
-						Notation
-						</div>
-					</a>
+				<div class="big">
+					<img class="big_picture"
+					src="MISC/IMG/ACTIVITIES/MINI/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
+					alt="Vieux Port" 
+					title="Vieux Port" />
+					<div class="big_desc">
+					<h4>Vieux Port</h4>
+					</div>
 				</div>
-				<div class="mini">
-					<a class="link" href="MISC/404.html">
-						<img class="mini_picture"
-						src="MISC/IMG/ACCOMODATION/MINI/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
-						alt="Hôtel du port" 
-						title="Hôtel du port" />
-						<div class="mini_desc">
-						<h4>Hôtel du port</h4>
-						<p>Nuit à partir de <strong>&nbsp52€&nbsp</strong></p>
-						Notation
-						</div>
-					</a>
+				<div class="medium">02</div>
+				<div class="small">03</div>
+				<div class="big">
+					<img class="big_picture"
+					src="MISC/IMG/ACTIVITIES/MINI/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
+					alt="Parc National des Calanques" 
+					title="Parc National des Calanques" />
+					<div class="big_desc">
+					<h4>Parc National des Calanques</h4>
+					</div>
 				</div>
-				<div class="mini">
-					<a class="link" href="MISC/404.html">
-						<img class="mini_picture"
-						src="MISC/IMG/ACCOMODATION/MINI/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
-						alt="Hôtel Les mouettes" 
-						title="Hôtel Les mouettes" />
-						<div class="mini_desc">
-						<h4>Hôtel Les mouettes</h4>
-						<p>Nuit à partir de <strong>&nbsp76€&nbsp</strong></p>
-						Notation
-						</div>
-					</a>
-				</div>
-				<div class="mini">
-					<a class="link" href="MISC/404.html">
-						<img class="mini_picture"
-						src="MISC/IMG/ACCOMODATION/MINI/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
-						alt="Hôtel de la mer" 
-						title="Hôtel de la mer" />
-						<div class="mini_desc">
-						<h4>Hôtel de la mer</h4>
-						<p>Nuit à partir de <strong>&nbsp46€&nbsp</strong></p>
-						Notation
-						</div>
-					</a>
-				</div>
-				<div class="mini">
-					<a class="link" href="MISC/404.html">
-						<img class="mini_picture"
-						src="MISC/IMG/ACCOMODATION/MINI/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
-						alt="Auberge Le Panier" 
-						title="Auberge Le Panier" />
-						<div class="mini_desc">
-						<h4>Auberge Le Panier</h4>
-						<p>Nuit à partir de <strong>&nbsp23€&nbsp</strong></p>
-						Notation
-						</div>
-					</a>
-				</div>
-				<div class="mini">
-					<a class="link" href="MISC/404.html">
-						<img class="mini_picture"
-						src="MISC/IMG/ACCOMODATION/MINI/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
-						alt="Hôtel Chez Amina" 
-						title="Hôtel Chez Amina" />
-						<div class="mini_desc">
-						<h4>Hôtel Chez Amina</h4>
-						<p>Nuit à partir de <strong>&nbsp96€&nbsp</strong></p>
-						Notation
-						</div>
-					</a>
-				</div>
+				<div class="small">05</div>
+				<div class="medium">06</div>
 			</div>
-			<h3>Afficher plus</h3>
-		</article>
-
-		<!-- Aside 02 Populaires -->
-		<aside id="popular">
-			<h2>Les plus populaires</h2>
-			<div class="container">
-				<div class="mini">
-					<a class="link" href="MISC/404.html">
-						<img class="mini_picture"
-						src="MISC/IMG/ACCOMODATION/MINI/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-						alt="Hôtel le soleil du matin"
-						title="Hôtel le soleil du matin" />
-						<div class="mini_desc">
-						<h4>Hôtel le soleil du matin</h4>
-						<p>Nuit à partir de <strong>&nbsp128€&nbsp</strong></p>
-						Notation
-						</div>
-					</a>
-				</div>
-				<div class="mini">
-					<a class="link" href="MISC/404.html">
-						<img class="mini_picture"
-						src="MISC/IMG/ACCOMODATION/MINI/aw-creative-VGs8z60yT2c-unsplash.jpg"
-						alt="Au coeur de l'eau Chambres d'hôtes"
-						title="Au coeur de l'eau Chambres d'hôtes" />
-						<div class="mini_desc">
-						<h4>Au coeur de l'eau Chambres d'hôtes</h4>
-						<p>Nuit à partir de <strong>&nbsp71€&nbsp</strong></p>
-						Notation
-						</div>
-					</a>
-				</div>
-				<div class="mini">
-					<a class="link" href="MISC/404.html">
-						<img class="mini_picture"
-						src="MISC/IMG/ACCOMODATION/MINI/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-						alt="Hôtel Tout bleu et Blanc"
-						title="Hôtel Tout bleu et Blanc" />
-						<div class="mini_desc">
-						<h4>Hôtel Tout bleu et Blanc</h4>
-						<p>Nuit à partir de <strong>&nbsp68€&nbsp</strong></p>
-						Notation
-						</div>
-					</a>
-				</div>
-			</div>
-		</aside>
-	</section>
-
-	<!-- Section 03 Activités -->
-	<section id="activities">
-		<h2>Activités à Marseille</h2>
-		<div class="container">
-			<div class="big">
-				<img class="big_picture"
-				src="MISC/IMG/ACTIVITIES/MINI/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
-				alt="Vieux Port" 
-				title="Vieux Port" />
-				<div class="big_desc">
-				<h4>Vieux Port</h4>
-				</div>
-			</div>
-			<div class="medium">02</div>
-			<div class="small">03</div>
-			<div class="big">
-				<img class="big_picture"
-				src="MISC/IMG/ACTIVITIES/MINI/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
-				alt="Parc National des Calanques" 
-				title="Parc National des Calanques" />
-				<div class="big_desc">
-				<h4>Parc National des Calanques</h4>
-				</div>
-			</div>
-			<div class="small">05</div>
-			<div class="medium">06</div>
-		</div>
-	</section>
+		</section>
+	</main>
 
 	<!-- Footer A propos/Assistance -->
 	<footer>
