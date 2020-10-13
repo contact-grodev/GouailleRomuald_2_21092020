@@ -439,12 +439,14 @@ a:focus
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	width: 100%;
 }
 
 #activities .container_vert
 {
+	display: flex;
 	flex-direction: column;
+	height: 100%;
 }
 
 /* Activités (grand) */
@@ -459,7 +461,6 @@ a:focus
 	box-shadow: 0px 0px 0.5em grey;
 	height: auto;
 	min-height: 250px;
-	width: 20%;
 	margin: 0;
 	margin-top: 30px;
 	margin-right: 15px;
@@ -472,7 +473,6 @@ a:focus
 	display: flex;
 	border-radius: 12px 12px 0 0;
 	width: auto;
-	height: 550px;
 	object-fit: cover;
 }
 
@@ -495,8 +495,7 @@ a:focus
 	overflow-wrap: break-word;
 	background-color: white;
 	box-shadow: 0px 0px 0.5em grey;
-	width: auto;
-	height: 50%;
+	height: 35%;
 	margin: 0;
 	margin-top: 30px;
 	margin-right: 15px;
@@ -509,6 +508,7 @@ a:focus
 	display: flex;
 	border-radius: 12px 12px 0 0;
 	object-fit: cover;
+	max-height: 35%;
 }
 
 /* Activités (moyen miniatures descriptions) */
