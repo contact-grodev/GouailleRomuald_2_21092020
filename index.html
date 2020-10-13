@@ -15,7 +15,7 @@
 	<header>
 
 			<!-- Menu -->
-			<nav id="menu">
+			<nav id="menu" class="flex_container_row">
 				<div id="logo">
 					<a href="index.html">
 					<img class="logo"
@@ -53,28 +53,28 @@
 		</header>
 
 		<!-- Section 01 Recherche -->
-		<section id="search">
-			<h2>Trouver votre hébergement pour des vacances de rêve</h2>
+		<section class="flex_container_col">
+			<h2 class="no_pad">Trouver votre hébergement pour des vacances de rêve</h2>
 			<p>En plein centre-ville ou en pleine nature</p>
 
 			<!-- Barre de recherche -->
 			<div>
-				<form id="searchbar" action="" method="get">
-					<button class="localisation">
+				<form id="searchbar" class="flex_container_row" action="" method="get">
+					<button class="localisation flex_container_col">
 						<img class="localisation_svg"
 						src="MISC/IMG/ICONS/map-marker-alt-solid.svg"
 						alt="Localisation"
 						title="Localisation" />
 					</button>
 					<input class="field" type="search" placeholder="Marseille, France"/>
-					<button class="search_button" type="button">
+					<button class="search_button flex_container_col" type="button">
 						Rechercher
 					</button>
 				</form>
 			</div>
 
 			<!-- Filtres -->
-			<div id="filters">
+			<div id="filters" class="flex_container_row">
 				<strong class="filters">Filtres</strong>
 				<a class="category"
 				href="MISC/404.html"
@@ -119,21 +119,21 @@
 			</div>
 
 			<!-- Nombre de resultats -->
-			<div id="result_number">
+			<div id="result_number" class="flex_container_row">
 				<strong class="result_number_svg">i</strong>
 				<p>Plus de <strong>500</strong> logements sont disponibles dans cette ville</p>
 			</div>
 		</section>
 
 		<!-- Section 02 Resultats -->
-		<section id="results">
+		<section id="results" class="flex_container_row">
 
 			<!-- Article 02 Hebergements -->
-			<article id="accomodation">
+			<article id="accomodation" class="flex_container_col">
 				<h2>Hébergements à Marseille</h2>
-				<div class="container">
-					<div class="mini">
-						<a class="link" href="MISC/404.html">
+				<div class="container flex_container_row">
+					<div class="mini flex_container_col">
+						<a class="link flex_container_col" href="MISC/404.html">
 							<img class="mini_picture"
 							src="MISC/IMG/ACCOMODATION/MINI/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
 							alt="Auberge la Canebière" 
@@ -145,8 +145,8 @@
 							</div>
 						</a>
 					</div>
-					<div class="mini">
-						<a class="link" href="MISC/404.html">
+					<div class="mini flex_container_col">
+						<a class="link flex_container_col" href="MISC/404.html">
 							<img class="mini_picture"
 							src="MISC/IMG/ACCOMODATION/MINI/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
 							alt="Hôtel du port" 
@@ -158,8 +158,8 @@
 							</div>
 						</a>
 					</div>
-					<div class="mini">
-						<a class="link" href="MISC/404.html">
+					<div class="mini flex_container_col">
+						<a class="link flex_container_col" href="MISC/404.html">
 							<img class="mini_picture"
 							src="MISC/IMG/ACCOMODATION/MINI/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
 							alt="Hôtel Les mouettes" 
@@ -171,8 +171,8 @@
 							</div>
 						</a>
 					</div>
-					<div class="mini">
-						<a class="link" href="MISC/404.html">
+					<div class="mini flex_container_col">
+						<a class="link flex_container_col" href="MISC/404.html">
 							<img class="mini_picture"
 							src="MISC/IMG/ACCOMODATION/MINI/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
 							alt="Hôtel de la mer" 
@@ -184,8 +184,8 @@
 							</div>
 						</a>
 					</div>
-					<div class="mini">
-						<a class="link" href="MISC/404.html">
+					<div class="mini flex_container_col">
+						<a class="link flex_container_col" href="MISC/404.html">
 							<img class="mini_picture"
 							src="MISC/IMG/ACCOMODATION/MINI/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
 							alt="Auberge Le Panier" 
@@ -197,7 +197,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="mini">
+					<div class="mini flex_container_col">
 						<a class="link" href="MISC/404.html">
 							<img class="mini_picture"
 							src="MISC/IMG/ACCOMODATION/MINI/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
@@ -215,42 +215,42 @@
 			</article>
 
 			<!-- Aside 02 Populaires -->
-			<aside id="popular">
+			<aside id="popular" class="flex_container_col">
 				<h2>Les plus populaires</h2>
-				<div class="container">
-					<div class="mini">
-						<a class="link" href="MISC/404.html">
+				<div class="flex_container_col">
+					<div class="mini flex_container_row">
+						<a class="link flex_container_row" href="MISC/404.html">
 							<img class="mini_picture"
 							src="MISC/IMG/ACCOMODATION/MINI/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
 							alt="Hôtel le soleil du matin"
 							title="Hôtel le soleil du matin" />
-							<div class="mini_desc">
+							<div class="mini_desc flex_container_col">
 							<h4>Hôtel le soleil du matin</h4>
 							<p>Nuit à partir de <strong>128€</strong></p>
 							Notation
 							</div>
 						</a>
 					</div>
-					<div class="mini">
-						<a class="link" href="MISC/404.html">
+					<div class="mini flex_container_row">
+						<a class="link flex_container_row" href="MISC/404.html">
 							<img class="mini_picture"
 							src="MISC/IMG/ACCOMODATION/MINI/aw-creative-VGs8z60yT2c-unsplash.jpg"
 							alt="Au coeur de l'eau Chambres d'hôtes"
 							title="Au coeur de l'eau Chambres d'hôtes" />
-							<div class="mini_desc">
+							<div class="mini_desc flex_container_col">
 							<h4>Au coeur de l'eau Chambres d'hôtes</h4>
 							<p>Nuit à partir de <strong>71€</strong></p>
 							Notation
 							</div>
 						</a>
 					</div>
-					<div class="mini">
-						<a class="link" href="MISC/404.html">
+					<div class="mini flex_container_row">
+						<a class="link flex_container_row" href="MISC/404.html">
 							<img class="mini_picture"
 							src="MISC/IMG/ACCOMODATION/MINI/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
 							alt="Hôtel Tout bleu et Blanc"
 							title="Hôtel Tout bleu et Blanc" />
-							<div class="mini_desc">
+							<div class="mini_desc flex_container_col">
 							<h4>Hôtel Tout bleu et Blanc</h4>
 							<p>Nuit à partir de <strong>68€</strong></p>
 							Notation
@@ -263,9 +263,9 @@
 
 		<!-- Section 03 Activités -->
 		<section id="activities">
-			<h2>Activités à Marseille</h2>
-			<div class="container">
-				<div class="big">
+			<h2 class="no_pad">Activités à Marseille</h2>
+			<div class="flex_container_row">
+				<div class="big flex_container_col">
 					<img class="big_picture"
 					src="MISC/IMG/ACTIVITIES/MINI/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
 					alt="Vieux Port" 
@@ -274,8 +274,8 @@
 					<h4>Vieux Port</h4>
 					</div>
 				</div>
-				<div class="container_vert">
-					<div class="medium">
+				<div class="flex_container_col">
+					<div class="medium flex_container_col">
 						<img class="medium_picture"
 						src="MISC/IMG/ACTIVITIES/MINI/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
 						alt="Fort de Pomègues" 
@@ -284,17 +284,17 @@
 						<h4>Fort de Pomègues</h4>
 						</div>
 					</div>
-					<div class="small">
+					<div class="small flex_container_col">
 						<img class="small_picture"
-						src="MISC/IMG/ACTIVITIES/MINI/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
-						alt="Fort de Pomègues" 
-						title="Fort de Pomègues" />
+						src="MISC/IMG/ACTIVITIES/MINI/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
+						alt="Îles du Frioul" 
+						title="Îles du Frioul" />
 						<div class="small_desc">
-						<h4>Fort de Pomègues</h4>
+						<h4>Îles du Frioul</h4>
 						</div>
 					</div>
 				</div>
-				<div class="big">
+				<div class="big flex_container_col">
 					<img class="big_picture"
 					src="MISC/IMG/ACTIVITIES/MINI/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
 					alt="Parc National des Calanques" 
@@ -303,23 +303,23 @@
 					<h4>Parc National des Calanques</h4>
 					</div>
 				</div>
-				<div class="container_vert">
-					<div class="small">
+				<div class="flex_container_col">
+					<div class="small flex_container_col">
 						<img class="small_picture"
-						src="MISC/IMG/ACTIVITIES/MINI/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
-						alt="Fort de Pomègues" 
-						title="Fort de Pomègues" />
+						src="MISC/IMG/ACTIVITIES/MINI/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
+						alt="Notre-Dame-de-la-Garde" 
+						title="Notre-Dame-de-la-Garde" />
 						<div class="small_desc">
-						<h4>Fort de Pomègues</h4>
+						<h4>Notre-Dame-de-la-Garde</h4>
 						</div>
 					</div>
-					<div class="medium">
+					<div class="medium flex_container_col">
 						<img class="medium_picture"
-						src="MISC/IMG/ACTIVITIES/MINI/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
-						alt="Fort de Pomègues" 
-						title="Fort de Pomègues" />
+						src="MISC/IMG/ACTIVITIES/MINI/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
+						alt="Parc Longchamp" 
+						title="Parc Longchamp" />
 						<div class="medium_desc">
-						<h4>Fort de Pomègues</h4>
+						<h4>Parc Longchamp</h4>
 						</div>
 					</div>
 				</div>
@@ -329,53 +329,46 @@
 
 	<!-- Footer A propos/Assistance -->
 	<footer>
-		<div class="container">
-			<div class="column">
+		<div class="container flex_container_row">
+			<div class="column flex_container_col">
 				<h3>A propos</h3>
-				<a class=""
-				href="MISC/404.html"
+				<a href="MISC/404.html"
 				title="Fonctionnement du site"
 				target="_self">
 				Fonctionnement du site
 				</a>
-				<a class=""
-				href="MISC/404.html"
+				<a href="MISC/404.html"
 				title="Conditions générales de vente"
 				target="_self">
 				Conditions générales de vente
 				</a>
-				<a class=""
-				href="MISC/404.html"
+				<a href="MISC/404.html"
 				title="Données et confidentialité"
 				target="_self">
 				Données et confidentialité
 				</a>
 			</div>
-			<div class="column">
+			<div class="column flex_container_col">
 				<h3>Nos hébergements</h3>
-				<a class=""
-				href="MISC/404.html"
+				<a href="MISC/404.html"
 				title="Charte qualité"
 				target="_self">
 				Charte qualité
 				</a>
-				<a class=""
-				href="MISC/404.html"
+				<a href="MISC/404.html"
 				title="Soumettre votre hôtel"
 				target="_self">
 				Soumettre votre hôtel
 				</a>
 			</div>
-			<div class="column">
+			<div class="column flex_container_col">
 				<h3>Assistance</h3>
-				<a class=""
-				href="MISC/404.html"
+				<a href="MISC/404.html"
 				title="Centre d'aide"
 				target="_self">
 				Centre d'aide
 				</a>
-				<a class=""
-				href="MISC/404.html"
+				<a href="MISC/404.html"
 				title="Nous contacter"
 				target="_self">
 				Nous contacter
