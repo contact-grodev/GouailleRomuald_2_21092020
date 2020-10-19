@@ -325,14 +325,12 @@ nav ul
 /* Hébergements (liens) */
 #accomodation .link
 {
-	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 /* Hébergement (miniatures) */
 #accomodation .mini
 {
-	justify-content: space-around;
 	background-color: white;
 	box-shadow: 0em 0em 0.5em grey;
 	width: 28%;
