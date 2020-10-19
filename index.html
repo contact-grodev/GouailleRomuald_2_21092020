@@ -11,20 +11,25 @@
 	</head>
 
 <body>
-<main>
-	<!-- Header Logo/Menu -->
-	<header>
-
+	<main>
+		<!-- Header Logo/Menu -->
+		<header>
+			<!-- Logo -->
+			<a href="index.html">
+			<img id="logo"
+			src="MISC/IMG/LOGO/Reservia.svg"
+			alt="Reservia"
+			title="LE site de réservation" />
+			</a>
+			<!-- Inscription -->
+			<a id="signup"
+				href="MISC/404.html"
+				title="S'inscrire"
+				target="_self">
+				<strong>S'inscrire</strong>
+			</a>
 			<!-- Menu -->
-			<nav id="menu" class="flex_container_row">
-				<div id="logo">
-					<a href="index.html">
-					<img class="logo"
-					src="MISC/IMG/LOGO/Reservia.svg"
-					alt="Reservia"
-					title="LE site de réservation" />
-					</a>
-				</div>
+			<nav class="flex_container_row">
 				<ul>
 					<li><a class="active menu_item"
 						href="#results"
@@ -40,23 +45,16 @@
 						Activités
 						</a>
 					</li>
-					<li><a id="signup"
-						class="menu_item"
-						href="MISC/404.html"
-						title="S'inscrire"
-						target="_self">
-						<strong>S'inscrire</strong>
-						</a>
-					</li>
 				</ul>
 			</nav>
 		</header>
 
 		<!-- Section 01 Recherche -->
 		<section class="flex_container_col">
-			<h2>Trouver votre hébergement pour des vacances de rêve</h2>
-			<p>En plein centre-ville ou en pleine nature</p>
-
+			<div class="flex_container_col">
+				<h2>Trouver votre hébergement pour des vacances de rêve</h2>
+				<p>En plein centre-ville ou en pleine nature</p>
+			</div>
 			<!-- Barre de recherche -->
 			<div>
 				<form id="searchbar" class="flex_container_row" action="" method="get">
@@ -216,7 +214,7 @@
 						</a>
 					</div>
 					<div class="mini flex_container_col">
-						<a class="link" href="MISC/404.html">
+						<a class="link flex_container_col" href="MISC/404.html">
 							<img class="mini_picture"
 							src="MISC/IMG/ACCOMODATION/MINI/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
 							alt="Hôtel Chez Amina" 

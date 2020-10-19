@@ -1,6 +1,5 @@
 /* Coded by Romuald Gouaille */
 
-/* Body */
 body
 {
 	font-family: 'Raleway', sans-serif;
@@ -12,6 +11,13 @@ main
 {
 	padding: 3em;
 	padding-top: 0;
+}
+
+header
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 /* Conteneurs flex */
@@ -72,7 +78,7 @@ h4
 	margin-bottom: 0;
 	margin-left: 0;
 	margin-right: 0;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /* Paragraphes */
@@ -87,7 +93,7 @@ p
 
 strong
 {
-	font-weight: 500;
+	font-weight: 700;
 }
 
 /* Liens */
@@ -121,22 +127,37 @@ a:focus
 
 }
 
-#logo .logo
+/* Logo */
+#logo
 {
 	height: 3em;
 	width: 6em;
 	padding-top: 1em;
+	order: 1;
 }
 
-/*Menu*/
-#menu
+/* Inscription */
+#signup
+{
+	padding: 1em;
+	padding-top: 2em;
+	font-weight: 900;
+	text-shadow: #DEEBFF 2px 2px;
+	max-width: 20em;
+	order: 3;
+	color: #0065FC;
+}
+
+/* Menu */
+nav
 {
 	width: 100%;
-	justify-content: space-between;
+	justify-content: flex-end;
+	order: 2;
 }
 
 /* Page active */
-#menu ul li a.active
+nav ul li a.active
 {
 	border-top-style: solid;
 	border-top-width: 2px;
@@ -145,7 +166,7 @@ a:focus
 }
 
 /*Puces du menu*/
-#menu ul
+nav ul
 {
 	display: flex;
 	flex-direction: row;
@@ -161,12 +182,6 @@ a:focus
 	padding: 1em;
 	padding-top: 2em;
 	text-shadow: #DEEBFF 2px 2px;
-}
-
-/* Inscription */
-#signup
-{
-	color: #0065FC;
 }
 
 /* Filtres */
@@ -190,7 +205,7 @@ a:focus
 #filters .category
 {
 	display: flex;
-	font-weight: bold;
+	font-weight: 700;
 	margin-left: 1em;
 	margin-right: 1em;
 	padding-right: 1em;
@@ -239,7 +254,7 @@ a:focus
 #searchbar .field
 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	border: 1px solid #F2F2F2;
 	border-right: none;
 	border-left: none;
@@ -253,7 +268,7 @@ a:focus
 {
 	justify-content: center;
 	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	text-decoration: none;
 	color: white;
 	height: 3em;
@@ -356,12 +371,6 @@ a:focus
 	margin: 2em;
 	margin-right: 0;
 	border-radius: 1em;
-}
-
-/* Populaires (liens) */
-#popular .link
-{
-	justify-content: space-between;
 }
 
 /* Populaires (miniatures) */
@@ -483,12 +492,6 @@ a:focus
 	padding: 1em;
 }
 
-/* Footer */
-footer
-{
-
-}
-
 /* Footer (conteneur) */
 footer .container
 {
@@ -508,4 +511,307 @@ footer .column
 	line-height: 2em;
 	padding-top: 3em;
 	padding-left: 0;
+}
+
+@media screen and (max-width: 1100px)
+{
+
+	.flex_container_col
+	{
+		padding: 0;
+		margin: 0;
+	}
+
+	.flex_container_row
+	{
+		padding: 0;
+		margin: 0;
+	}
+	
+	main
+	{
+		padding: 0;
+		margin: 0;
+	}
+
+	header
+	{
+		display: inline-block;
+		width: 100%;
+	}
+
+	h2
+	{
+		font-size: 3em;
+		font-weight: 700;
+	}
+
+	h3
+	{
+		font-size: 2em;
+	}
+
+	h4
+	{
+		font-size: 2.5em;
+	}
+
+	p
+	{
+		font-size: 2em;
+	}
+
+	#logo
+	{
+		height: 6em;
+		width: 16em;
+	}
+
+	#signup
+	{
+		float: right;
+		font-size: 2em;
+		padding-top: 2em;
+		padding-right: 1em;
+	}
+
+	nav ul
+	{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0;
+		font-size: 2em;
+	}
+
+	nav ul li
+	{
+		display: flex;
+		justify-content: center;
+		width: 50%;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-bottom-color: #F2F2F2;
+	}
+
+	/* Page active */
+	nav ul li a.active
+	{
+		justify-content: center;
+		border-top-style: none;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-bottom-color: #0065FC;
+		width: 100%;
+	}
+
+	/* Zone de recherche */
+	#searchbar
+	{
+		justify-content: space-between;
+		padding: 3em;
+	}
+
+	/* Bouton "Localisation" */
+	#searchbar .localisation
+	{
+		height: auto;
+		width: 6em;
+		padding-left: 0.5em;
+	}
+
+	/* Bouton "Localisation" (svg) */
+	#searchbar .localisation_svg
+	{
+		height: 3em;
+		width: 3em;
+		padding-left: 1em;
+	}
+
+	/* Champ de recherche */
+	#searchbar .field
+	{
+		font-size: 2em;
+		width: 68%;
+		padding-left: 1em;
+	}
+
+	/* Bouton "Rechercher" */
+	#searchbar .search_button
+	{
+		font-size: 2em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+	/* Filtres */
+	#filters
+	{
+		flex-wrap: wrap;
+		font-size: 2em;
+		padding-left: 1.5em;
+	}
+
+	/* Filtres (titre) */
+	#filters .filters
+	{
+		margin-right: 100%;
+	}
+
+	/* Filtres (catégories) */
+	#filters .category
+	{
+		margin: 0;
+		margin-right: 1em;
+		margin-bottom: 1em;
+		padding: 0;
+		padding-right: 1em;	
+	}
+
+	/* Filtres (svg) */
+	#filters .filters_svg
+	{
+		height: 1em;
+		width: 1em;
+	}
+
+	#results_number
+	{
+		flex-wrap: wrap;
+	}
+
+	#result_number .result_number_svg
+	{
+		font-size: 3em;
+		margin: 0;
+		margin-left: 1em;
+		margin-right: 0.5em;
+		margin-bottom: 2em;
+		padding: 0;
+	}
+
+	/* Résultats */
+	#results
+	{
+		flex-direction: column;
+	}
+
+	/* Populaires */
+	#popular
+	{
+		order: 1;
+		width: auto;
+		border-radius: 0;
+		margin: 0;
+	}
+
+	/* Populaires (miniatures images) */
+	#popular .mini_picture
+	{
+		height: 15em;
+		width: 35%;
+	}
+
+	/* Hébergements */
+	#accomodation
+	{
+		order: 2;
+		width: auto;
+		margin: 0;
+		padding: 2.5em;
+		background-color: white;
+	}
+
+	/* Hébergements (liens) */
+	#accomodation .link
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Hébergement (miniatures) */
+	#accomodation .mini
+	{
+		width: 100%;
+		margin: 0;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		padding: 0;
+		padding-bottom: 1em;
+	}
+
+	/* Hébergement (miniatures images) */
+	#accomodation .mini_picture
+	{
+		width: auto;
+		height: 15em;
+		padding: 0.5em;
+		border-radius: 1em 1em 0 0;
+	}
+
+	#activities
+	{
+		padding: 2.5em;
+	}
+
+	/* Activités (conteneur) */
+	#activities .flex_container_row
+	{
+		flex-direction: column;
+	}
+
+	#activities .flex_container_row > *
+	{
+		width: 100%;
+	}
+
+	/* Activités (grand) */
+	#activities .big
+	{
+		margin-bottom: 3em;
+	}
+
+	/* Activités (grand miniatures images) */
+	#activities .big_picture
+	{
+		height: 15em;
+	}
+
+	/* Activités (moyen) */
+	#activities .medium
+	{
+		margin-bottom: 3em;
+	}
+
+	/* Activités (moyen miniatures images) */
+	#activities .medium_picture
+	{
+		height: 15em;
+	}
+
+	/* Activités (petit) */
+	#activities .small
+	{
+		margin-bottom: 3em;
+	}
+
+	/* Activités (petit miniatures images) */
+	#activities .small_picture
+	{
+		height: 15em;
+	}
+
+	/* Footer */
+	footer .flex_container_row
+	{
+		flex-direction: column;
+		font-size: 2em;
+	}
+
+	/* Footer (colonnes) */
+	footer .column
+	{
+		width: 100%;
+	}
+
 }
