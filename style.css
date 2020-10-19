@@ -166,7 +166,7 @@ nav ul li a.active
 }
 
 /*Puces du menu*/
-header nav ul
+nav ul
 {
 	display: flex;
 	flex-direction: row;
