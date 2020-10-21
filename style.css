@@ -528,6 +528,12 @@ footer .column
 		margin: 0;
 	}
 	
+
+	.alinea
+	{
+		padding-left: 2em;
+	}
+
 	main
 	{
 		padding: 0;
